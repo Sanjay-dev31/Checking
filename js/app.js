@@ -14,7 +14,7 @@ var list_val;
 var list_child;
 var list_parent;
 var moves = 0;
-var flag = 0;
+var flag =0;
 var restart_flag = 0;
 var star = 3;
 var match_flag;
