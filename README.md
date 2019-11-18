@@ -1,4 +1,6 @@
 # Memory Game Project
+This game helps to improve the ability of photographic memory and hand-eye co-ordination.
+Memory game works wonder for children of age group 5 years to 10 years.
 
 ## Table of Contents
 
@@ -7,14 +9,17 @@
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This project is a completed version of Udacity starter game version.
+Javascript file has been extended enormously to add many features like:
+1. Highlighting the cards when matched
+2. Displaying unmatching cards
+3. Number of moves or attempts
+4. Timer functionality
+5. Star ratings
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+If you would like to contribute to this project, add more features like:
+1. Provide more star rating options
+2. Final scores depending on the time and moves taken to complete
