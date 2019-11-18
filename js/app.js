@@ -288,7 +288,7 @@ function card_display(match_flag)
         secondCard.classList.add('match_disp');
 
         // Short delay give for user to perceive cards are matching
-        setTimeout(matched,750);
+        setTimeout(matched,200);
     }
 
     else 
@@ -300,7 +300,7 @@ function card_display(match_flag)
         secondCard.classList.add('unmatched');
         
         // Short delay give for user to perceive cards are not matching and memorize the cards location
-        setTimeout(unmatched,750);
+        setTimeout(unmatched,200);
     }
 }
 
