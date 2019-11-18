@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Matching Game</title>
+      <meta name="description" content="This is a symbol matching game. Helps to improve your memory">
+      <!--Script reference to Jquery-->
+      <script src="jquery-3.4.1.min.js"></script>
+      <!--Stylesheet for card symbols-->
+      <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+      <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+      <!--Customised Javascript file reference-->
+      <link rel="stylesheet" href="css/app.css">
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <h1>Matching Game</h1>
+         </header>
+         <!--Score panel details. Star Rating and Moves display-->
+         <section class="score-panel">
+            <h2>Ratings & Moves</h3>
+            <ul class="stars">
+               <li><i class="fa fa-star" id="star1"></i></li>
+               <li><i class="fa fa-star" id="star2"></i></li>
+               <li><i class="fa fa-star" id="star3"></i></li>
+            </ul>
+            <span class="moves" id="move_num"> </span>
+            Moves
+            <!-- Restart button display-->
+            <div class="restart" id= "restart_button">
+               <i class="fa fa-repeat"></i>
+            </div>
+         </section>
+         <p id="answer"> </p>
+         <!--Display of all cards and identification of cards through unique dataset-->
+         <ul id= "deck-id" class="deck">
+            <li class="card" data-testid="diamond" data-points="diamond1" id="diamond1">
+               <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" data-testid="plane" data-points="plane1" id="plane1">
+               <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" data-testid="anchor" data-points="anchor1" id="anchor1">
+               <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" data-testid="bolt" data-points="bolt1" id="bolt1">
+               <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" data-testid="cube" data-points="cube1" id="cube1">
+               <i class="fa fa-cube"></i>
+            </li>
+            <li class="card" data-testid="anchor" data-points="anchor2" id="anchor2">
+               <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" data-testid="leaf" data-points="leaf1" id="leaf1">
+               <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" data-testid="bicycle" data-points="bicycle1" id="bicycle1">
+               <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" data-testid="diamond" data-points="diamond2" id="diamond2">
+               <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" data-testid="bomb" data-points="bomb1" id="bomb1">
+               <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" data-testid="leaf" data-points="leaf2" id="leaf2">
+               <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" data-testid="bomb" data-points="bomb2" id="bomb2">
+               <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" data-testid="bolt" data-points="bolt2" id="bolt2">
+               <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" data-testid="bicycle" data-points="bicycle2" id="bicycle2">
+               <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" data-testid="plane" data-points="plane2" id="plane2">
+               <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" data-testid="cube" data-points="cube2" id="cube2">
+               <i class="fa fa-cube"></i>
+            </li>
+         </ul>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+         <!-- Modal content -->
+         <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="winning_msg"></p>
+            <p id="winning_time"></p>
+            <p id="winning_moves"></p>
+            <p id="winning_stars"></p>
+         </div>
+      </div>
+      <script src="js/app.js"></script>
+   </body>
+</html>
